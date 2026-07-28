@@ -1,0 +1,7 @@
+@GenericParser_HostAddress = http://localhost:5072
+
+POST {{GenericParser_HostAddress}}/api/v1/parse-content
+Content-Type: application/json
+Accept: application/json
+
+###
