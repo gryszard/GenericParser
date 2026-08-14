@@ -3,5 +3,17 @@
 POST {{GenericParser_HostAddress}}/api/v1/parse-content
 Content-Type: application/json
 Accept: application/json
+{
+  "type": "CSV",
+  "content": "SWQsSW1pZSxDemFzTmExMDBtCjEsUnlzemFyZCwxMC41NgoyLEphbiwKMywsMTQuOQo0LFVzYWluLDkuNTg="
+}
 
 ###
+
+POST {{GenericParser_HostAddress}}/api/v1/parse-content
+Content-Type: application/json
+Accept: application/json
+{
+  "type": "INTERNAL_JSON",
+  "content": "WwogewogICJNYXJrYSI6Ik9wZWwiLAogICJNb2RlbCI6IkFzdHJhIiwKICAiUm9jem5payI6IjIwMDEiCiB9LAogewogICJNYXJrYSI6IlN1enVraSIsCiAgIk1vZGVsIjoiU1g0IgogfSwKIHsKICAiTWFya2EiOiJGaWF0IiwKICAiTW9kZWwiOiJQYW5kYSIsCiAgIlNwYWxhbmllTmExMDAiOiI0LjUiCiB9Cl0="
+}
