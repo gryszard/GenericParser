@@ -9,8 +9,8 @@ public class ParserFactory
         return payloadType switch
         {
             PayloadType.CSV => new CsvParser(),
-            PayloadType.INTERNAL_JSON => throw new NotImplementedException(),
-            _ => throw new NotImplementedException()
+            PayloadType.INTERNAL_JSON => new JsonParser(),
+            _ => throw new NotSupportedException($"Payload type: {payloadType} is not supported")
         };
     }
 }
