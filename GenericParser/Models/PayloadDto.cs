@@ -4,6 +4,6 @@ namespace GenericParser.Models;
 
 public class PayloadDto
 {
-    public PayloadType? Type { get; set; }
-    public string? Content { get; set; }
+    public required PayloadType Type { get; set; }
+    public required string Content { get; set; }
 }
